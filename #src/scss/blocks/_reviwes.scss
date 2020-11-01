@@ -1,0 +1,175 @@
+.reviews {
+    @media (min-width: 767px){
+       background: url('../img/reviews.png') center no-repeat,linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, 
+    #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+    }
+    background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, 
+        #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+    padding: 0px 0px 90px 0px;
+    margin: 0px 0px 200px 0px;
+    @media (max-width: 992px){
+        margin: 0px 0px 60px 0px;
+    }
+    
+        
+
+    &__content {
+    }
+
+    &__title {
+        margin: 0px 0px 100px 0px;
+    }
+
+    &__body {
+    }
+
+    &__slider {
+    }
+
+    &__pagination {
+    }
+}
+
+.slider-reviews {
+    margin: 0px auto;
+    position: relative;
+    // overflow: hidden;
+    max-width: 730px;
+    @media (max-width: 992px){
+        max-width: none;
+    }
+    
+     &::after{
+        content: '';
+        position: absolute;
+        width: 678px;
+        height: 363px;
+        background: $white;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+        border-radius: 20px;
+            }
+     &::before{
+        content: '';
+        position: absolute;
+        width: 618px;
+        height: 331px;
+        background: $white;
+        border-radius: 20px;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media (max-width: 767px){
+        &::after{
+            content: '';
+            position: absolute;
+            width: calc(100% - 30px);
+            height: 100px;
+            background: $white;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+            border-radius: 20px;
+                }
+         &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% - 60px);
+            height:100px;
+            background: $white;
+            border-radius: 20px;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__slide {
+        background: #FFFFFF;
+        box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+        border-radius: 20px;
+        padding: 100px 80px 90px 80px;
+        position: relative;
+        flex-shrink: 0;
+        @media (max-width: 767px){
+            padding: 80px 30px;
+        }
+         &:after{
+            content: '';
+            background: url('../img/icons/icon-reviwes.svg') 0 0 no-repeat;
+            width: 234px;
+            height: 168px;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        opacity: 0;
+        visibility: hidden;
+        &.swiper-slide-active{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__text {
+        font-family: 'CircularStd';
+        font-size: 26.7px;
+        line-height: 1.5;
+        color: #94A2B3;
+        position: relative;
+        z-index: 4;
+        @media (max-width: 767px){
+            font-size: 14px;
+        }
+    }
+}
+
+.swiper-wrapper {
+}
+
+.pagination-reviews {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 730px;
+    margin: 90px auto 0 auto;
+    padding: 0px 75px 0px 0px;
+    @media (max-width: 767px){
+        padding: 0px 0px 0px 0px;
+    }
+    &__btn{
+        margin: 0 15px;
+       &_prev {
+            background: url('../img/icons/next.svg') center no-repeat;
+            width: 50px;
+            height: 25px;
+            cursor: pointer;
+            transform: rotate(180deg);
+            &.swiper-button-disabled{
+                transform: rotate(0deg);
+                width: 31.73px;
+                height: 15.33px;
+                background: url('../img/icons/prev.svg') center no-repeat;
+            }
+        }
+
+        &_next {
+            background: url('../img/icons/next.svg') center no-repeat;
+            width: 51.73px;
+            height: 25px;
+            transform: rotate(0deg);
+            cursor: pointer;
+            &.swiper-button-disabled{
+                transform: rotate(180deg);
+                width: 31.73px;
+                height: 15.33px;
+                background: url('../img/icons/prev.svg') center no-repeat;
+            }
+        } 
+    }
+    
+}

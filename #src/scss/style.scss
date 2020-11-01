@@ -1,5 +1,4 @@
 // font
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 // base
 @import "./base/variables";
 @import "./base/mixins";
@@ -7,12 +6,15 @@
 @import "./base/zeroing";
 @import "./base/ibg"; 
 @import "./base/burger"; 
+@import "./libs/swiper-bundle.min";
 
 // blocks
 @import "./blocks/header";
 @import "./blocks/footer";
 @import "./blocks/hero";
 @import "./blocks/features";
+@import "./blocks/documentation";
+@import "./blocks/reviwes";
 
 // global styles
 ._container {
@@ -39,9 +41,7 @@
   flex-direction: column;
   
 }
-// body{
-//   background: #E5E5E5;
-// }
+
 .page {
   flex: 1 1 auto;
 }
