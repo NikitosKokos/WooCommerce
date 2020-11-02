@@ -1,0 +1,123 @@
+.people {
+
+    &__bg {
+        max-width: 1692px;
+        margin: 0 auto;
+        
+        img{
+            max-width: 100%;
+            transform: translateY(40%);
+            // object-fit: contain;
+        }
+    }
+
+    &__content {
+        transform: translateY(135px);
+        @media (max-width: $width + px){
+            transform: translateY(80px);
+        }
+        @media (max-width: 992px){
+            transform: translateY(50px);
+        }
+        @media (max-width: 450px){
+            transform: translateY(0px);
+        }
+    }
+
+    &__title {
+        margin: 0px 0px 30px 0px;
+    }
+    &__descr {
+        font-size: 18px;
+        line-height: calc(25 / 18);
+        text-align: center;
+        color: #94A2B3;
+        margin: 0 auto;
+        max-width: 660px;
+    }
+
+    &__footer {
+    }
+}
+
+.footer-people {
+    background: #5F37EF;
+    padding: 78px 0;
+    position: relative;
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 767px){
+            flex-wrap: wrap;
+         }
+    }
+
+    &__text {
+        font-size: 36px;
+        line-height: calc(52 / 36);
+        color: $white;
+        span{
+            font-weight: 700;
+        }
+        max-width: 855px;
+        padding: 0px 67px 0px 0px;
+        @media (max-width: $width + px){
+            font-size: 30px;
+        }
+        @media (max-width: 992px){
+            font-size: 24px;
+            padding: 0px 10px 0px 0px;
+        }
+        @media (max-width: 767px){
+            padding: 0px 0px 0px 0px;
+            font-size: 30px;
+            margin: 0px 0px 30px 0px;
+         }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $white;
+        height: 72px;
+        border-radius: 60px;
+        font-weight: 700;
+        font-size: 18px;
+        color: $white;
+        padding: 0 46px;
+        transition: all .3s ease-in-out;
+        white-space: nowrap;
+        text-transform: uppercase;
+        @media (min-width: 992px){
+           &:hover{
+           background: $white;
+           color: #5F37EF;
+         }
+        }
+        @media (max-width: 992px){
+            padding: 0 20px;
+            height: 60px;
+        }
+        @media (max-width: 767px){
+           flex: 1 1 100%;
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        bottom: -21px;
+        right: 144px;
+        img{
+            max-width: 100%;
+        }
+        @media (max-width: 992px){
+            right: 100px;
+            width: 50px;
+        }
+        @media (max-width: 767px){
+           display: none;
+        }
+    }
+}

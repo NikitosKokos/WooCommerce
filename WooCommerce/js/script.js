@@ -190,7 +190,7 @@ ibg();
     burger.addEventListener("click", () =>{
         headerMenu.classList.toggle("header__list_active");
         burger.classList.toggle("burger_active");
-        wrapper.classList.toggle("lock");
+        wrapper.classList.toggle("hidden");
     });;
     // @ @include("spoller.js",{});
     // @ @include("select.js",{});

@@ -15,6 +15,7 @@
 @import "./blocks/features";
 @import "./blocks/documentation";
 @import "./blocks/reviwes";
+@import "./blocks/people";
 
 // global styles
 ._container {
@@ -45,6 +46,11 @@
 .page {
   flex: 1 1 auto;
 }
+
+body.hidden{
+  overflow: hidden;
+}
+
 
 // media
 @import "./base/media";
